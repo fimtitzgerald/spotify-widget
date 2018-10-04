@@ -2,7 +2,7 @@
 
 Early stages WIP of a simple command line widget to give feedback on currently playing information from Spotify. 
 
-##### TO-D)
+##### TO-DO
 * Pretty up the interface
 * Pretty up the text. 
 * Maybe add player controls? 
