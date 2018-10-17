@@ -16,6 +16,7 @@ func main() {
 	getAlbumCmd := `tell application "Spotify" to album of current track as string`
 
 	textView := tview.NewTextView()
+	textView.SetBorder(true).SetTitle(" Spotify - Now Playing ")
 	textView.SetTextAlign(1).SetChangedFunc(func() {
 		app.Draw()
 	})
@@ -34,7 +35,6 @@ func main() {
 	if err := app.SetRoot(textView, true).Run(); err != nil {
 		panic(err)
 	}
-
 }
 
 func currentSong(cmd string) []byte {
